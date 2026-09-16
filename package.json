@@ -1,0 +1,20 @@
+{
+  "name": "byte-time",
+  "version": "0.1.0",
+  "description": "Parse and format human-readable byte sizes and durations",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "bs": "dist/cli.js"
+  },
+  "exports": {
+    "./bytes": "./dist/bytes.js",
+    "./duration": "./dist/duration.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
