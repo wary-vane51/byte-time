@@ -58,10 +58,20 @@ $ bs duration format 5400000
 1h30m
 ```
 
+## Tests
+
+```
+npm test
+```
+
+Runs the type checker and then the test files under `dist/` with Node's
+built-in test runner. No test framework dependency needed.
+
 ## What's not here yet
 
-No tests, no published npm package, no locale-aware number formatting.
-See the commit history for where this is headed.
+No published npm package, no locale-aware number formatting, and
+`parseBytes`/`parseDuration` don't accept negative input even though the
+formatters can produce it. See the commit history for where this is headed.
 
 ## License
 
