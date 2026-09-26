@@ -58,6 +58,17 @@ $ bs duration format 5400000
 1h30m
 ```
 
+Add `--json` to any command to get the result as a JSON object instead of
+plain text, which is easier to pipe into something else:
+
+```
+$ bs bytes parse "2.5GiB" --json
+{"bytes":2684354560}
+
+$ bs duration format 5400000 --json
+{"formatted":"1h30m"}
+```
+
 ## Tests
 
 ```
